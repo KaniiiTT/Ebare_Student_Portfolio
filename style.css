@@ -1,4 +1,4 @@
-/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     background-color: #0b0f17;
 }
 
-/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,6 @@ header nav a:hover {
     color: #7aa8ff;
 }
 
-/* HERO */
 .hero {
     position: relative;
     height: 100vh;
@@ -90,7 +89,7 @@ header nav a:hover {
     color: #000;
 }
 
-/* ABOUT */
+
 .about {
     display: flex;
     gap: 40px;
@@ -116,7 +115,7 @@ header nav a:hover {
     opacity: 0.9;
 }
 
-/* PROJECTS */
+
 .projects {
     padding: 100px;
     text-align: center;
@@ -142,29 +141,6 @@ header nav a:hover {
     border-radius: 10px;
 }
 
-/* GALLERY */
-.gallery {
-    padding: 100px;
-    text-align: center;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.08);
-}
-
-/* CONTACT */
 .contact {
     padding: 100px;
     text-align: center;
