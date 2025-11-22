@@ -157,11 +157,14 @@ section {
     min-height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* <-- ensures content fills card and button stays bottom */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeUp 0.8s ease forwards;
+    text-align: justify;
 }
+
 
 .project-card:hover {
     transform: translateY(-5px);
@@ -187,7 +190,12 @@ section {
     color: #c6d4ff;
     line-height: 1.4;
 }
-
+.project-card .btn {
+    padding: 8px 18px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
 /* ABOUT */
 .about {
     display: flex;
