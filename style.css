@@ -82,13 +82,15 @@ header nav a:hover {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 12px;
-    animation: float 6s ease-in-out infinite;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
-
 .hero-text p {
     font-size: 18px;
     opacity: 0.85;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
+
 
 .btn {
     display: inline-block;
