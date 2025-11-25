@@ -63,3 +63,31 @@ setInterval(() => {
     if (position > 10 || position < -10) floatDirection *= -1;
     heroText.style.transform = `translateY(${position}px)`;
 }, 50);
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("videoModal");
+    const btn = document.getElementById("playVideoBtn");
+    const video = document.getElementById("projectVideo");
+    const closeBtn = modal.querySelector(".close");
+
+    // Open modal
+    btn.addEventListener("click", () => {
+        modal.style.display = "block";
+        video.play();
+    });
+
+    // Close modal on × click
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+        video.pause();
+        video.currentTime = 0;
+    });
+
+    // Close modal if clicking outside modal content
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        }
+    });
+});
