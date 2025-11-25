@@ -1,1 +1,0 @@
-Lawrence L. Ebare Portfolio
