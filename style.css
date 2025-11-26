@@ -43,6 +43,7 @@ body {
     object-fit: cover;
     border-radius: 0 0 50% 50% / 0 0 30% 30%;
     z-index: 1;
+    filter: brightness(0.8);
 }
 
 .sidebar-profile-door .profile-photo {
@@ -91,6 +92,11 @@ body {
     height: 60vh;
     background: url("images/background.png") center/cover no-repeat;
     position: relative;
+    display: flex;                /* enable flexbox */
+    justify-content: center;      /* center horizontally */
+    align-items: center;          /* center vertically */
+    text-align: center;           /* center text inside */
+    background-position: 41% center; 
 }
 
 .hero .overlay {
@@ -100,31 +106,37 @@ body {
 }
 
 .hero-text {
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
+    margin-top: 35px;
+    position: relative;  /* now relative so it stays inside flex container */
+    z-index: 1;          /* ensures text is above overlay */
 }
 
 .hero-text h1 {
     font-size: 50px;
 }
 
+
 /* BUTTON */
-.btn,button.btn {
+/* Unified button style */
+.btn, button.btn {
     display: inline-block;
     border: 1px solid #5ac8ff;
     padding: 10px 20px;
     border-radius: 6px;
     margin-top: 15px;
-    color: #5ac8ff;
+    color: #5ac8ff;       /* ensures text is correct */
+    background: transparent; /* ensures background matches links */
     text-decoration: none;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.btn:hover,button.btn:hover {
+/* Hover effect */
+.btn:hover, button.btn:hover {
     background: #5ac8ff;
     color: #0b0f17;
 }
+
 button.btn {
     border: 1px solid #5ac8ff;
     box-shadow: none;
@@ -307,6 +319,11 @@ footer {
     height: 20px;
     margin-right: 8px;
     vertical-align: middle;
+}
+.project-card h3{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 .project-card p{
      margin-bottom: 12px; /* adjust spacing as needed */

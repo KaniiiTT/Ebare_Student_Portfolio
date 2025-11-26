@@ -1,11 +1,23 @@
-// Sidebar smooth scroll
-document.querySelectorAll(".sidebar-nav a").forEach(link => {
+document.querySelectorAll(".sidebar-nav a, .header-nav a").forEach(link => {
     link.addEventListener("click", e => {
         e.preventDefault();
-        const target = document.querySelector(link.getAttribute("href"));
-        target.scrollIntoView({ behavior: "smooth" });
+
+        const targetId = link.getAttribute("href");
+        const target = document.querySelector(targetId);
+
+        if (target) {
+            const headerOffset = 60; // height of your fixed header in px
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
     });
 });
+
 
 // Modal
 const modal = document.getElementById("videoModal");
