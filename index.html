@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -46,11 +48,28 @@
             <p>IT Student • Aspiring Web Developer</p>
         </div>
 
-        <div class="sidebar-contact">
-            <h3>Contact Info</h3>
-            <p>Email:<br> <a href="mailto:lawrenceebare2@gmail.com">lawrenceebare2@gmail.com</a></p>
-            <p>GitHub:<br> <a href="https://github.com/KaniiiTT" target="_blank">github.com/KaniiiTT</a></p>
+                <div class="sidebar-contact">
+            <h3 style="margin-bottom: 12px;text-align: center;">Contact Me</h3>
+            <ul class="contact-list">
+                <li>
+                    <img src="images/email-icon.png" alt="Email Icon" class="contact-icon">
+                    <a href="mailto:lawrenceebare2@gmail.com">lawrenceebare2@gmail.com</a>
+                </li>
+                <li>
+                    <img src="images/github-icon.png" alt="GitHub Icon" class="contact-icon">
+                    <a href="https://github.com/KaniiiTT" target="_blank">github.com/KaniiiTT</a>
+                </li>
+                <li>
+                    <img src="images/linkedin-icon.png" alt="LinkedIn Icon" class="contact-icon">
+                    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">linkedin.com/in/yourprofile</a>
+                </li>
+                <li>
+                    <img src="images/facebook-icon.png" alt="Facebook Icon" class="contact-icon">
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">facebook.com/yourprofile</a>
+                </li>
+            </ul>
         </div>
+
     </aside>
 
     <!-- MAIN CONTENT -->
@@ -139,30 +158,49 @@
         </footer>
     </main>
 
-    <!-- RIGHT SIDEBAR -->
-    <aside class="right-sidebar">
-        <h3>Programming Skills</h3>
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+            <h3>Programming Skills</h3>
 
-        <div class="skill">
-            <p><img src="images/html.png" alt="HTML Icon" class="skill-icon"> HTML <span>Intermediate</span></p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-        </div>
+            <div class="skill">
+                <p><img src="images/html.png" alt="HTML Icon" class="skill-icon"> HTML <span>Intermediate</span></p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+            </div>
 
-        <div class="skill">
-            <p><img src="images/css.png" alt="CSS Icon" class="skill-icon"> CSS <span>Intermediate</span></p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
-        </div>
+            <div class="skill">
+                <p><img src="images/css.png" alt="CSS Icon" class="skill-icon"> CSS <span>Intermediate</span></p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+            </div>
 
-        <div class="skill">
-            <p><img src="images/c.png" alt="C Icon" class="skill-icon"> C <span>Beginner</span></p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 40%;"></div></div>
-        </div>
+            <div class="skill">
+                <p><img src="images/c.png" alt="C Icon" class="skill-icon"> C <span>Beginner</span></p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 40%;"></div></div>
+            </div>
 
-        <div class="skill">
-            <p><img src="images/python.png" alt="Python Icon" class="skill-icon"> Python <span>Beginner</span></p>
-            <div class="skill-bar"><div class="skill-fill" style="width: 45%;"></div></div>
-        </div>
-    </aside>
+            <div class="skill">
+                <p><img src="images/python.png" alt="Python Icon" class="skill-icon"> Python <span>Beginner</span></p>
+                <div class="skill-bar"><div class="skill-fill" style="width: 45%;"></div></div>
+            </div>
+
+            <h3 class="centered-heading">Tools & Technologies</h3>
+
+            <div class="tools-section">
+                <div class="skill">
+                    <img src="images/vscode.png" alt="VS Code Icon" class="skill-icon">
+                    <span>VS Code</span>
+                </div>
+                <div class="skill">
+                    <img src="images/github-icon.png" alt="GitHub Icon" class="skill-icon">
+                    <span>GitHub</span>
+                </div>
+                <div class="skill">
+                    <img src="images/figma.png" alt="Figma Icon" class="skill-icon">
+                    <span>Figma</span>
+                </div>
+            </div>
+
+
+        </aside>
 
     <!-- VIDEO MODAL -->
     <div id="videoModal" class="modal">
