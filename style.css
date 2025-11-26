@@ -221,7 +221,7 @@ footer {
 
 /* HEADER */
 .header {
-    position: fixed;
+    position: fixed;            /* stays on top */
     top: 0;
     left: 0;
     width: 100%;
@@ -230,28 +230,46 @@ footer {
     border-bottom: 1px solid rgba(90,200,255,0.2);
     display: flex;
     align-items: center;
-    z-index: 100;
     padding: 0 20px;
+    z-index: 100;
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-}
-
+/* Logo on the left */
 .logo {
     color: #5ac8ff;
     font-size: 24px;
     font-weight: bold;
-    margin-right: auto; /* keep logo on left */
+    margin-right: auto; /* pushes nav to center */
 }
 
+/* Header container for nav + icon */
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* centers nav */
+    align-items: center;
+    width: 100%;
+}
+
+/* Icon behind nav */
+.nav-background-icon {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* icon doesn't block clicks */
+}
+
+.nav-background-icon img {
+    width: 500px; /* adjust size as needed */
+    height: 60px;
+}
+
+/* Navigation links */
 .header-nav {
     display: flex;
     gap: 15px;
+    z-index: 1; /* stays above background icon */
 }
 
 .header-nav a {
@@ -267,6 +285,7 @@ footer {
     background-color: #5ac8ff;
     color: #0b0f17;
 }
+
 
 /* RIGHT SIDEBAR */
 .right-sidebar {
