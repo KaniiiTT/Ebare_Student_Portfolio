@@ -9,153 +9,158 @@
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="logo">L E.</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="header">
+        <h1 class="logo">L. E.</h1>
+        <div class="header-container">
+            <nav class="header-nav">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h1>Hi, I’m Lawrence L. Ebare</h1>
-            <p>An IT Student</p>
-            <a class="btn" href="#projects">Get Started</a>
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-profile-door">
+            <img src="images/original.png" alt="Door Frame" class="door-frame">
+            <img src="images/lawrence_photo2.png" alt="Profile Photo" class="profile-photo">
         </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="images/project1.png" alt="Project Image">
-                <h3>Hobbies Page</h3>
-                <div class="desc">
-                    <p>This project is a personal “Hobbies Page” that showcases my interests outside of school and programming. It demonstrates my ability to structure content clearly using HTML and CSS, create visually appealing layouts, and organize information in a user-friendly way.</p>
-                    <p>On this page, I highlighted hobbies such as reading, gaming, music, and programming. I included images, descriptions, and styled the page with colors and fonts to make it engaging and easy to navigate.</p>
-                    <p>Skills used: HTML, CSS, responsive layout design, basic styling techniques</p>
-                </div>
-                <a href="https://kaniiitt.github.io/Ebare_Hobbies/" class="btn" target="_blank">Visit</a>
+        <div class="sidebar-profile-text">
+            <h2>Lawrence L. Ebare</h2>
+            <p>IT Student • Aspiring Web Developer</p>
+        </div>
+
+        <div class="sidebar-contact">
+            <h3>Contact Info</h3>
+            <p>Email:<br> <a href="mailto:lawrenceebare2@gmail.com">lawrenceebare2@gmail.com</a></p>
+            <p>GitHub:<br> <a href="https://github.com/KaniiiTT" target="_blank">github.com/KaniiiTT</a></p>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="overlay"></div>
+            <div class="hero-text">
+                <h1>Hi, I’m Lawrence</h1>
+                <p>An IT Student</p>
+                <a class="btn" href="#projects">Get Started</a>
             </div>
+        </section>
 
-            <div class="project-card">
-                <img src="images/project2.png" alt="Project Image">
-                <h3>NetAware</h3>
-                <div class="desc">
-                    <p>NetAware is a webpage created to educate users about cybersecurity and promote online safety awareness. The site offers practical tips, best practices, and resources to help people protect their personal information online.</p>
-                    <p>This project was created by a team of me and 4 other students. It demonstrates our ability to structure content clearly, design a user-friendly interface, and enhance interactivity using JavaScript.</p>
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <img src="images/project1.png" alt="">
+                    <h3>Hobbies Page</h3>
+                    <p>A personal webpage showcasing my hobbies like reading, gaming, music, and programming with organized layout, images, and styling.</p>
+                    <p>Skills used: HTML, CSS, responsive layout, basic styling</p>
+                    <a href="https://kaniiitt.github.io/Ebare_Hobbies/" target="_blank" class="btn">Visit</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project2.png" alt="">
+                    <h3>NetAware</h3>
+                    <p>A team project promoting cybersecurity awareness with tips and resources. Demonstrates clear content structure and interactivity using JavaScript.</p>
                     <p>Skills used: HTML, CSS, JavaScript</p>
+                    <a href="https://2501101448-pixel.github.io/NetAware/index.html#home" target="_blank" class="btn">Visit</a>
                 </div>
-               <a href="https://2501101448-pixel.github.io/NetAware/index.html#home" class="btn" target="_blank">Visit</a>
-            </div>
 
-            <div class="project-card">
-                <img src="images/project4.png" alt="Project Image">
-                <h3>To-do List App</h3>
-                <div class="desc">
-                    <p>This project is a personal “Todo List App” that helps users manage their daily tasks efficiently. It demonstrates my ability to create interactive web applications using HTML, CSS, and JavaScript, as well as my skills in organizing content and implementing user-friendly features.</p>
-                    <p>On this page, users can add, mark as completed, and delete tasks. The app includes a dark mode design, task counter, and the ability to save tasks in the browser using localStorage, ensuring tasks persist after refreshing the page. The layout is clean, visually appealing, and easy to navigate.</p>
-                    <p>Skills used: HTML, CSS, JavaScript, responsive layout design, interactive UI design</p>
+                <div class="project-card">
+                    <img src="images/project4.png" alt="">
+                    <h3>Todo List App</h3>
+                    <p>An interactive app for managing daily tasks with add, complete, delete features, dark mode, and localStorage for task persistence.</p>
+                    <p></p>
+                    <p>Skills used: HTML, CSS, JavaScript, responsive layout, interactive UI design</p>
+                    <a href="https://kaniiitt.github.io/to_do_list/" target="_blank" class="btn">Visit</a>
                 </div>
-               <a href="https://kaniiitt.github.io/to_do_list/" class="btn" target="_blank">Visit</a>
-            </div>
 
-            <div class="project-card">
-                <img src="images/project 3.png" alt="Project Image">
-                <div class="desc">
+                <div class="project-card">
+                    <img src="images/project3.png" alt="">
                     <h3>Simple C Calculator</h3>
-                    <p>
-                     A console-based calculator in C that uses loops, conditions, switch-case, and functions to perform basic arithmetic operations. It allows repeated calculations until the user exits and includes checks for errors like division by zero. This project demonstrates modular programming and control flow in C.
-                    </p>
-                    <p>
-                        Skills used: C programming, functions, loops, conditional statements, switch-case, and basic error handling.
-                    </p>
+                    <p>A console calculator in C using loops, conditions, switch-case, and functions with error handling.</p>
+                    <p>Skills used: C programming, functions, loops, conditional statements, switch-case, error handling</p>
+                    <button id="playVideoBtn" class="btn">Watch Video</button>
                 </div>
-                <button class="btn" id="playVideoBtn">Watch Video</button>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-        <!-- Video Modal -->
-    <div id="videoModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <video id="projectVideo" width="100%" controls>
-        <source src="videos/calculator_demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
-    </div>
-    </div>
-
-    <!-- ABOUT ME -->
-    <section id="about" class="about">
-        <div class="about-image-container">
-            <img src="images/lawrence.png" alt="My portrait">
-        </div>
-        <div class="about-text">
+        <!-- ABOUT -->
+        <section id="about" class="about">
             <h2>About Me</h2>
-            <p>
-                Hi! I'm a first-year IT student who is passionate about web development  
-                and learning how things work behind the scenes. I enjoy building clean,  
-                functional interfaces and exploring different programming languages  
-                as I grow in the field of technology.
-            </p>
-            <h3>My Programming Levels</h3>
-            <ul class="skills-list">
-                <li><strong>HTML:</strong> Beginner → Intermediate</li>
-                <li><strong>CSS:</strong> Beginner → Intermediate</li>
-                <li><strong>C:</strong> Beginner</li>
-                <li><strong>Python:</strong> Beginner</li>
+            <p>I’m a first-year IT student passionate about web development. I enjoy building clean interfaces and learning how things work behind the scenes.</p>
+
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML – Beginner → Intermediate</li>
+                <li>CSS – Beginner → Intermediate</li>
+                <li>C – Beginner</li>
+                <li>Python – Beginner</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <div class="contact-container-wrapper">
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>If you'd like to collaborate or connect, feel free to reach out.</p>
-            <div class="contact-container">
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+            <p>Feel free to reach out!</p>
 
-    <!-- FOOTER -->
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2025 Lawrence Ebare. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2025 Lawrence Ebare. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+        <h3>Programming Skills</h3>
+
+        <div class="skill">
+            <p><img src="images/html.png" alt="HTML Icon" class="skill-icon"> HTML <span>Intermediate</span></p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
         </div>
-        <div class="footer-socials">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/KaniiiTT" target="_blank">GitHub</a>
-            <a href="mailto:lawrenceebare2@gmail.com">Email</a>
+
+        <div class="skill">
+            <p><img src="images/css.png" alt="CSS Icon" class="skill-icon"> CSS <span>Intermediate</span></p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+        </div>
+
+        <div class="skill">
+            <p><img src="images/c.png" alt="C Icon" class="skill-icon"> C <span>Beginner</span></p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 40%;"></div></div>
+        </div>
+
+        <div class="skill">
+            <p><img src="images/python.png" alt="Python Icon" class="skill-icon"> Python <span>Beginner</span></p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 45%;"></div></div>
+        </div>
+    </aside>
+
+    <!-- VIDEO MODAL -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="projectVideo" width="100%" controls>
+                <source src="videos/calculator_demo.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
-</footer>
 
-<!-- Back to Top Button -->
-    <button id="backToTop">↑</button>
-
-    <!-- Link JavaScript -->
     <script src="script.js"></script>
-
 </body>
-
 </html>
