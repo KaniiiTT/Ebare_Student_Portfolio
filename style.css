@@ -675,9 +675,7 @@ footer {
     width: 20px; /* keep original size */
     height: 20px;
 }
-.centered-heading{
-    margin-top: 40px;
-}
+
 /* LEARNING SECTION */
 .learning {
   padding: 60px 40px;
@@ -721,6 +719,7 @@ footer {
   color: #c6d4ff;
 }
 .softskills h3 {
+    
     text-align: center;
     color: #5ac8ff;
     margin-bottom: 15px;
